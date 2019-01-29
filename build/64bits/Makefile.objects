@@ -1,0 +1,8 @@
+phalcon.lo: /Volumes/Develop/GitRepos/cphalcon/build/64bits/phalcon.c
+	$(LIBTOOL) --mode=compile $(CC)  -I. -I/Volumes/Develop/GitRepos/cphalcon/build/64bits $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS)  -c /Volumes/Develop/GitRepos/cphalcon/build/64bits/phalcon.c -o phalcon.lo 
+$(phplibdir)/phalcon.la: ./phalcon.la
+	$(LIBTOOL) --mode=install cp ./phalcon.la $(phplibdir)
+
+./phalcon.la: $(shared_objects_phalcon) $(PHALCON_SHARED_DEPENDENCIES)
+	$(LIBTOOL) --mode=link $(CC) $(COMMON_FLAGS) $(CFLAGS_CLEAN) $(EXTRA_CFLAGS) $(LDFLAGS) -o $@ -export-dynamic -avoid-version -prefer-pic -module -rpath $(phplibdir) $(EXTRA_LDFLAGS) $(shared_objects_phalcon) $(PHALCON_SHARED_LIBADD)
+

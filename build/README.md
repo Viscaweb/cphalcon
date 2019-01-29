@@ -1,4 +1,4 @@
-Build Directory
+geBuild Directory
 =================
 
 This directory contains:

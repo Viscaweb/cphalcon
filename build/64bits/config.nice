@@ -1,0 +1,10 @@
+#! /bin/sh
+#
+# Created by configure
+
+CFLAGS='-march=native -mtune=native -O2 -finline-functions -fomit-frame-pointer -fvisibility=hidden' \
+CPPFLAGS='-DPHALCON_RELEASE' \
+CC='gcc' \
+'./configure' \
+'--enable-phalcon' \
+"$@"

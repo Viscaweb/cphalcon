@@ -1,0 +1,97 @@
+/* config.h.in.  Generated from configure.in by autoheader.  */
+
+/* Whether to build phalcon as dynamic module */
+#undef COMPILE_DL_PHALCON
+
+/* Define to 1 if you have the <dlfcn.h> header file. */
+#undef HAVE_DLFCN_H
+
+/* Define to 1 if you have the <ext/hash/php_hash.h> header file. */
+#undef HAVE_EXT_HASH_PHP_HASH_H
+
+/* Define to 1 if you have the <ext/igbinary/igbinary.h> header file. */
+#undef HAVE_EXT_IGBINARY_IGBINARY_H
+
+/* Define to 1 if you have the <ext/json/php_json.h> header file. */
+#undef HAVE_EXT_JSON_PHP_JSON_H
+
+/* Define to 1 if you have the <ext/pcre/php_pcre.h> header file. */
+#undef HAVE_EXT_PCRE_PHP_PCRE_H
+
+/* Define to 1 if you have the <ext/session/php_session.h> header file. */
+#undef HAVE_EXT_SESSION_PHP_SESSION_H
+
+/* Define to 1 if you have the <inttypes.h> header file. */
+#undef HAVE_INTTYPES_H
+
+/* Define to 1 if you have the <memory.h> header file. */
+#undef HAVE_MEMORY_H
+
+/* Whether you have Phalcon Framework */
+#undef HAVE_PHALCON
+
+/* Define to 1 if you have the <stdint.h> header file. */
+#undef HAVE_STDINT_H
+
+/* Define to 1 if you have the <stdlib.h> header file. */
+#undef HAVE_STDLIB_H
+
+/* Define to 1 if you have the <strings.h> header file. */
+#undef HAVE_STRINGS_H
+
+/* Define to 1 if you have the <string.h> header file. */
+#undef HAVE_STRING_H
+
+/* Define to 1 if you have the <sys/stat.h> header file. */
+#undef HAVE_SYS_STAT_H
+
+/* Define to 1 if you have the <sys/types.h> header file. */
+#undef HAVE_SYS_TYPES_H
+
+/* Define to 1 if you have the <unistd.h> header file. */
+#undef HAVE_UNISTD_H
+
+/* Define to 1 if your C compiler doesn't accept -c and -o together. */
+#undef NO_MINUS_C_MINUS_O
+
+/* Define to the address where bug reports for this package should be sent. */
+#undef PACKAGE_BUGREPORT
+
+/* Define to the full name of this package. */
+#undef PACKAGE_NAME
+
+/* Define to the full name and version of this package. */
+#undef PACKAGE_STRING
+
+/* Define to the one symbol short name of this package. */
+#undef PACKAGE_TARNAME
+
+/* Define to the home page for this package. */
+#undef PACKAGE_URL
+
+/* Define to the version of this package. */
+#undef PACKAGE_VERSION
+
+/* Whether non-free minifiers are available */
+#undef PHALCON_NON_FREE
+
+/* Whether PHP hash extension is present at compile time */
+#undef PHALCON_USE_PHP_HASH
+
+/* Whether PHP igbinary extension is present at compile time */
+#undef PHALCON_USE_PHP_IGBINARY
+
+/* Whether PHP json extension is present at compile time */
+#undef PHALCON_USE_PHP_JSON
+
+/* Whether PHP pcre extension is present at compile time */
+#undef PHALCON_USE_PHP_PCRE
+
+/* Whether PHP session extension is present at compile time */
+#undef PHALCON_USE_PHP_SESSION
+
+/* Define to 1 if you have the ANSI C header files. */
+#undef STDC_HEADERS
+
+/* Define if processor uses big-endian word */
+#undef WORDS_BIGENDIAN
