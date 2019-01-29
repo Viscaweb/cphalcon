@@ -46,7 +46,7 @@
  *        $field = "name";
  *        $type = "InvalidValue";
  *        $code = 103;
- *        $message = new Message($text, $field, $type, $code, $this);
+ *        $message = new Message($text, $field, $type, $code);
  *        $this->appendMessage($message);
  *     }
  *   }
@@ -75,8 +75,6 @@ ZEND_BEGIN_ARG_INFO_EX(arginfo_phalcon_mvc_model_message___construct, 0, 0, 1)
 	ZEND_ARG_INFO(0, message)
 	ZEND_ARG_INFO(0, field)
 	ZEND_ARG_INFO(0, type)
-	ZEND_ARG_INFO(0, code)
-	ZEND_ARG_OBJ_INFO(0, model, Phalcon\\Mvc\\ModelInterface, 1)
 ZEND_END_ARG_INFO()
 
 ZEND_BEGIN_ARG_INFO_EX(arginfo_phalcon_mvc_model_message_setmodel, 0, 0, 1)
@@ -128,7 +126,6 @@ PHALCON_INIT_CLASS(Phalcon_Mvc_Model_Message){
  * @param string $message
  * @param string $field
  * @param string $type
- * @param int $code
  * @param Phalcon\Mvc\ModelInterface $model
  */
 PHP_METHOD(Phalcon_Mvc_Model_Message, __construct){
@@ -192,7 +189,7 @@ PHP_METHOD(Phalcon_Mvc_Model_Message, getType){
 /**
  * Sets message code
  *
- * @param int $code
+ * @param string $code
  * @return Phalcon\Mvc\Model\Message
  */
 PHP_METHOD(Phalcon_Mvc_Model_Message, setCode){
@@ -208,7 +205,7 @@ PHP_METHOD(Phalcon_Mvc_Model_Message, setCode){
 /**
  * Returns message code
  *
- * @return int
+ * @return string
  */
 PHP_METHOD(Phalcon_Mvc_Model_Message, getCode){
 

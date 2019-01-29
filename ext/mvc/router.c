@@ -935,21 +935,13 @@ PHP_METHOD(Phalcon_Mvc_Router, handle){
 		 */
 		if (phalcon_array_isset_string_fetch(&params_str, parts, SS("params"))) {
 			PHALCON_INIT_VAR(str_params);
-			if (phalcon_start_with_str(params_str, SL("/"))) {
-				phalcon_substr(str_params, params_str, 1, 0);
-			} else {
-				phalcon_substr(str_params, params_str, 0, 0);
-			}
+			phalcon_substr(str_params, params_str, 1, 0);
 			if (zend_is_true(str_params)) {
 				zval slash;
 				ZVAL_STRINGL(&slash, "/", 1, 0);
 
 				PHALCON_INIT_NVAR(params);
 				phalcon_fast_explode(params, &slash, str_params);
-			} else if (!PHALCON_IS_EMPTY(str_params)) {
-				PHALCON_INIT_NVAR(params);
-				array_init_size(params, 1);
-				phalcon_array_append(&params, str_params, PH_COPY);
 			}
 
 			phalcon_array_unset_string(&parts, SS("params"), PH_SEPARATE);
